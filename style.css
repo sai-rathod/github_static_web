@@ -62,10 +62,17 @@ h2 {
   box-shadow: 0 0 25px rgba(255, 75, 43, 0.8);
 }
 
-footer {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #aaa;
+#message {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff4b2b;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+#message.show {
+  opacity: 1;
 }
 
 @keyframes fadeIn {
