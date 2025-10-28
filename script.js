@@ -1,7 +1,5 @@
-function showMessage() {
-  const message = document.getElementById("message");
-  message.textContent = "🚀 Static Website Successfully Hosted on GitHub Pages!";
-  message.style.color = "#ff4b2b";
-  message.style.fontWeight = "600";
-  message.style.marginTop = "1rem";
-}
+document.getElementById("clickBtn").addEventListener("click", () => {
+  const msg = document.getElementById("message");
+  msg.textContent = "🚀 Static Website Successfully Hosted on GitHub Pages!";
+  msg.classList.add("show");
+});
