@@ -1,83 +1,74 @@
-:root {
-  --bg: linear-gradient(135deg, #e0eafc, #cfdef3);
-  --text: #222;
-  --card-bg: rgba(255, 255, 255, 0.2);
-  --accent: #0077ff;
-}
-
-body.dark {
-  --bg: linear-gradient(135deg, #1e1e1e, #2c3e50);
-  --text: #f5f5f5;
-  --card-bg: rgba(0, 0, 0, 0.3);
-  --accent: #00bfff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  transition: all 0.3s ease;
-}
-
-header {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0f1a, #1b1b2f);
+  color: #fff;
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.hero {
+.container {
   text-align: center;
-  padding: 5rem 2rem;
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: var(--accent);
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.features {
-  padding: 3rem 2rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.card {
-  background: var(--card-bg);
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.05);
   padding: 2rem;
-  border-radius: 12px;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  text-align: center;
-  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.4);
+  animation: fadeIn 1.5s ease;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 15px #ff4b2b);
+}
+
+h1 {
+  color: #8f70ff;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #ff4b2b;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.intro {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #cfcfcf;
+}
+
+.glow-btn {
+  background: linear-gradient(45deg, #8f70ff, #ff4b2b);
+  border: none;
+  padding: 0.9rem 1.6rem;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px rgba(143, 112, 255, 0.6);
+  transition: 0.3s;
+}
+
+.glow-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 75, 43, 0.8);
 }
 
 footer {
-  text-align: center;
-  padding: 2rem;
+  margin-top: 2rem;
   font-size: 0.9rem;
+  color: #aaa;
 }
 
-/* Reveal Animations */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
