@@ -1,16 +1,7 @@
-// Theme toggle
-document.getElementById('themeToggle').addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-});
-
-// Scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.1 });
-
-reveals.forEach(el => observer.observe(el));
+function showMessage() {
+  const message = document.getElementById("message");
+  message.textContent = "🚀 Static Website Successfully Hosted on GitHub Pages!";
+  message.style.color = "#ff4b2b";
+  message.style.fontWeight = "600";
+  message.style.marginTop = "1rem";
+}
