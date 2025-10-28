@@ -5,7 +5,7 @@ A static website hosted on GitHub Pages demonstrating modern web development pra
 
 ## 🌐 Live Demo
 
-Visit the live website: [https://sai-rathod.github.io/github_static_web/](https://sai-rathod.github.io/github_static_web/)
+*Visit the live website*: [https://sai-rathod.github.io/github_static_web/](https://sai-rathod.github.io/github_static_web/)
 
 ## 📋 About
 
